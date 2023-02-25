@@ -1,7 +1,4 @@
 ﻿using System.Data;
-using System.Data.SqlClient;
-using System.Diagnostics;
-using Microsoft.EntityFrameworkCore;
 
 namespace CongratsApp
 {
@@ -9,6 +6,7 @@ namespace CongratsApp
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("\n \t\t\t\t\t-----Программа \"Поздравлятор\"-----");
             Console.WriteLine($"\t\t\t\t\t\tСегодня {DateTime.Today.ToLongDateString()}\n");
             using (AppContext db = new())
